@@ -14,5 +14,5 @@ namespace ChekingSys.Data
 
         }
         public DbSet<Worker> Workers { get; set; }
-}
+    }   
 }
