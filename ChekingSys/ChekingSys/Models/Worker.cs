@@ -43,5 +43,15 @@ namespace ChekingSys.Models
         public string March29 { get; set; }
         public string March30 { get; set; }
         public string March31 { get; set; }
+        public int Shift1 { get; set; }
+        public int Shift2 { get; set; }
+        public double workedays { get; set; }
+        public int MonthlyRate { get; set; }
+        public int RegularLeave { get; set; }
+        public int UnpaidLeave { get; set; }
+        public int Motherhood { get; set; }
+        public int Illness { get; set; }
+        public int ХolidaysВeekends { get; set; }
+        public double Overtime { get; set; }
     }
 }
