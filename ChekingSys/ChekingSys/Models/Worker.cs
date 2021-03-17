@@ -43,6 +43,5 @@ namespace ChekingSys.Models
         public string March29 { get; set; }
         public string March30 { get; set; }
         public string March31 { get; set; }
-
     }
 }
