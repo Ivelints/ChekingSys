@@ -8,7 +8,7 @@ namespace ChekingSys.Controllers
 {
     public class WorkersController1 : Controller
     {
-        public IActionResult Index()
+        public IActionResult WIndex()
         {
             return View();
         }
