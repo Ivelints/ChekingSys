@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChekingSys.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210317173005_AddWorkersToDatabase")]
-    partial class AddWorkersToDatabase
+    [Migration("20210323153756_AddCategoryToDatabase")]
+    partial class AddCategoryToDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,104 +27,134 @@ namespace ChekingSys.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("March1")
+                    b.Property<int>("HolidaysВeekends")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Illness")
+                        .HasColumnType("int");
+
+                    b.Property<string>("M1")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March10")
+                    b.Property<string>("M10")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March11")
+                    b.Property<string>("M11")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March12")
+                    b.Property<string>("M12")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March13")
+                    b.Property<string>("M13")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March14")
+                    b.Property<string>("M14")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March15")
+                    b.Property<string>("M15")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March16")
+                    b.Property<string>("M16")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March17")
+                    b.Property<string>("M17")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March18")
+                    b.Property<string>("M18")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March19")
+                    b.Property<string>("M19")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March2")
+                    b.Property<string>("M2")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March20")
+                    b.Property<string>("M20")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March21")
+                    b.Property<string>("M21")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March22")
+                    b.Property<string>("M22")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March23")
+                    b.Property<string>("M23")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March24")
+                    b.Property<string>("M24")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March25")
+                    b.Property<string>("M25")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March26")
+                    b.Property<string>("M26")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March27")
+                    b.Property<string>("M27")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March28")
+                    b.Property<string>("M28")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March29")
+                    b.Property<string>("M29")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March3")
+                    b.Property<string>("M3")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March30")
+                    b.Property<string>("M30")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March31")
+                    b.Property<string>("M31")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March4")
+                    b.Property<string>("M4")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March5")
+                    b.Property<string>("M5")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March6")
+                    b.Property<string>("M6")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March7")
+                    b.Property<string>("M7")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March8")
+                    b.Property<string>("M8")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("March9")
+                    b.Property<string>("M9")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MonthlyRate")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Motherhood")
+                        .HasColumnType("int");
 
                     b.Property<string>("NamеSurname")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<double>("Overtime")
+                        .HasColumnType("float");
+
                     b.Property<string>("Position")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RegularLeave")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Shift1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Shift2")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UnpaidLeave")
+                        .HasColumnType("int");
+
+                    b.Property<double>("workedays")
+                        .HasColumnType("float");
 
                     b.HasKey("ID");
 

@@ -423,7 +423,6 @@ C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\bin\Debug\netcorea
 C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\ChekingSys.csproj.CoreCompileInputs.cache
 C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\ChekingSys.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\ChekingSys.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\WorkersController1\Index.cshtml.g.cs
 D:\ChekingSys\ChekingSys\ChekingSys\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\ChekingSys\ChekingSys\ChekingSys\bin\Debug\netcoreapp3.1\appsettings.json
 D:\ChekingSys\ChekingSys\ChekingSys\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -843,3 +842,6 @@ D:\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\ChekingSys.genruntim
 D:\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\WorkersController1\WIndex.cshtml.g.cs
 D:\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\Home\WIndex.cshtml.g.cs
 D:\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\Home\WIndex.cshtml.g.cs
+C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\WorkersController1\WIndex.cshtml.g.cs
