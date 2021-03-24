@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChekingSys.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210323153756_AddCategoryToDatabase")]
+    [Migration("20210324181534_AddCategoryToDatabase")]
     partial class AddCategoryToDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
