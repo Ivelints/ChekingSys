@@ -846,3 +846,4 @@ C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcorea
 C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\Home\WIndex.cshtml.g.cs
 C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\Workers\Index.cshtml.g.cs
 C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\Workers\Create.cshtml.g.cs
+C:\Users\my\Documents\GitHub\ChekingSys\ChekingSys\ChekingSys\obj\Debug\netcoreapp3.1\Razor\Views\Workers\Edit.cshtml.g.cs

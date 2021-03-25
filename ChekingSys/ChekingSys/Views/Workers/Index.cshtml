@@ -26,34 +26,10 @@
                         Position
                     </th>
                     <th>
-                        1
+                        Shift
                     </th>
                     <th>
-                        2
-                    </th>
-                    <th>
-                        3
-                    </th>
-                    <th>
-                        4
-                    </th>
-                    <th>
-                        5
-                    </th>
-                    <th>
-                        6
-                    </th>
-                    <th>
-                        7
-                    </th>
-                    <th>
-                        8
-                    </th>
-                    <th>
-                        9
-                    </th>
-                    <th>
-                        10
+                        Worked days
                     </th>
                     <th></th>
                 </tr>
@@ -63,18 +39,19 @@
                 {
                 <tr>
                     <td width="20%">@obj.NamеSurname</td>
-                    <td width="15%">@obj.Position</td>
-                    <td width="5%">@obj.M1</td>
-                    <td width="5%">@obj.M2</td>
-                    <td width="5%">@obj.M3</td>
-                    <td width="5%">@obj.M4</td>
-                    <td width="5%">@obj.M5</td>
-                    <td width="5%">@obj.M6</td>
-                    <td width="5%">@obj.M7</td>
-                    <td width="5%">@obj.M8</td>
-                    <td width="5%">@obj.M9</td>
-                    <td width="5%">@obj.M10</td>
-                    <td></td>
+                    <td width="20%">@obj.Position</td>
+                    <td width="20%">@obj.Shift</td>
+                    <td width="20%">@obj.Workedays</td>
+                    <td>
+                        <div class=" w-75 btn-group" role="group">
+                            <a asp-controller="Workers" asp-route-Id="@obj.ID" asp-action="Edit" class="btn btn-primary mx-2">
+                                Edit
+                            </a>
+                            <a asp-controller="Workers" asp-route-Id="@obj.ID" asp-action="Delete" class="btn btn-danger mx-2">
+                                Delete
+                            </a>
+                        </div>
+                    </td>
                 </tr>
                 }
             </tbody>

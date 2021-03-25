@@ -12,9 +12,11 @@ namespace ChekingSys.Models
         [Key]
         public int ID { get; set; }
         [DisplayName("Name Surname")]
+        [Required]
         public string NamеSurname  { get; set; }
+        [Required]
         public string Position { get; set; }
-        public string M1 { get; set; }
+        /*public string M1 { get; set; }
         public string M2 { get; set; }
         public string M3 { get; set; }
         public string M4 { get; set; }
@@ -45,15 +47,20 @@ namespace ChekingSys.Models
         public string M29 { get; set; }
         public string M30 { get; set; }
         public string M31 { get; set; }
-        public int Shift1 { get; set; }
-        public int Shift2 { get; set; }
-        public double workedays { get; set; }
-        public int MonthlyRate { get; set; }
+        public int Shift1 { get; set; }*/
+        [Required]
+        [Range(1, 2, ErrorMessage = "It must be first or second shift!")]
+        public int Shift { get; set; }
+        [DisplayName("Worked days")]
+        [Required]
+        [Range(1,30,ErrorMessage ="It must be the between the days in one month!")]
+        public double Workedays { get; set; }
+        /*public int MonthlyRate { get; set; }
         public int RegularLeave { get; set; }
         public int UnpaidLeave { get; set; }
         public int Motherhood { get; set; }
         public int Illness { get; set; }
         public int HolidaysВeekends { get; set; }
-        public double Overtime { get; set; }
+        public double Overtime { get; set; }*/
     }
 }
