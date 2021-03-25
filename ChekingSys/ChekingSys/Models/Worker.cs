@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace ChekingSys.Models
     {
         [Key]
         public int ID { get; set; }
+        [DisplayName("Name Surname")]
         public string NamеSurname  { get; set; }
         public string Position { get; set; }
         public string M1 { get; set; }
