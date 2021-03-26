@@ -26,6 +26,7 @@ namespace ChekingSys.Controllers
         {   
             return View();
         }
+        
         //post the thing
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -53,6 +54,49 @@ namespace ChekingSys.Controllers
             }
 
             return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Worker obj)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Workers.Update(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+        }
+        //just delete the thing
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var obj = _db.Workers.Find(id);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirm(int? id)
+        {
+            var obj = _db.Workers.Find(id);
+            if (obj==null)
+            {
+                return NotFound();
+            }
+            
+                _db.Workers.Remove(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            
+            return View(obj);
         }
     }
 }
