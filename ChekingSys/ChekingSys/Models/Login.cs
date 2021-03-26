@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+
 namespace ChekingSys.Models
 {
     public class Login
     {
-        
-        //public int ID { get; set; }
+        [Key]
+        public int ID { get; set; }
         [Required(ErrorMessage = "You need to provide a username.")]
         public string Username { get; set; }
         [Required(ErrorMessage = "You need to have a password")]
