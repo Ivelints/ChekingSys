@@ -14,5 +14,6 @@ namespace ChekingSys.Data
 
         }
         public DbSet<Worker> Workers { get; set; }
+        public DbSet<Login> Login { get; set; }
     }   
 }
