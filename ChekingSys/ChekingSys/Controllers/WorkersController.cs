@@ -82,6 +82,7 @@ namespace ChekingSys.Controllers
 
             return View();
         }
+        //just confirm the delete
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirm(int? id)

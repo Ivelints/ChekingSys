@@ -2,7 +2,85 @@
     ViewData["Title"] = "Home Page";
 }
 
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <a asp-controller="Login" asp-action="Login" class="btn btn-success w-40 h-30"> <i class="fas fa-sign-in-alt"></i> Login</a>
-    </div>
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <a asp-controller="Login" asp-action="Login" class="btn btn-success w-40 h-30"> <i class="fas fa-sign-in-alt"></i> Login</a>
+</div>*@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/Content/css/the-big-picture.css" rel="stylesheet">
+
+</head>
+
+<style>
+body { background-image: url('https://web-static.wrike.com/blog/content/uploads/2021/05/4-Remote-Working-Productivity-Tips-With-Microsoft-Teams-and-Wrike-1-896x518.jpg?av=096e237a6c1aa592b8d4e249266791d7'); 
+       background-repeat: no-repeat; 
+       background-attachment: fixed; 
+       background-size: cover; }
+</style>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            @*(<div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>*@
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Welcome</h1>
+                    <a asp-controller="Login" asp-action="Login" class="btn btn-success w-40 h-30"> <i class="fas fa-sign-in-alt"></i> Login</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/Content/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

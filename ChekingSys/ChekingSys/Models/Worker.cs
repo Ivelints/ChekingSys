@@ -53,7 +53,7 @@ namespace ChekingSys.Models
         public int Shift { get; set; }
         [DisplayName("Worked days")]
         [Required]
-        [Range(1,30,ErrorMessage ="It must be the between the days in one month!")]
+        [Range(1,31,ErrorMessage ="It must be the between the days in one month!")]
         public double Workedays { get; set; }
         /*public int MonthlyRate { get; set; }
         public int RegularLeave { get; set; }

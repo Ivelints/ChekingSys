@@ -14,7 +14,7 @@ namespace ChekingSys.Models
         public string Username { get; set; }
         [Required(ErrorMessage = "You need to have a password")]
         [DataType(DataType.Password)]
-        [StringLength(80, MinimumLength = 8, ErrorMessage = "You need to provide a long enough password.")]
+        [StringLength(80, MinimumLength = 1, ErrorMessage = "You need to provide a long enough password.")]
         public string Password { get; set; }
     }
 }
