@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChekingSys.Data
 {
+    //Here is the connection to the database.
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)

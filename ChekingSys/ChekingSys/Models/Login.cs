@@ -8,6 +8,7 @@ namespace ChekingSys.Models
 {
     public class Login
     {
+        //This is the base code for the Login Page view.
         [Key]
         public int ID { get; set; }
         [Required(ErrorMessage = "You need to provide a username.")]

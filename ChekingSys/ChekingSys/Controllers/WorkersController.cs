@@ -9,25 +9,25 @@ using ChekingSys.Models;
 namespace ChekingSys.Controllers
 {
     public class WorkersController : Controller
-    {
+    {//This is the Worker page code.
         private readonly AppDbContext _db;
-        
+        //Connection with the database.
         public WorkersController(AppDbContext db)
         {
             _db = db;
         }
+        //Loading the worker list from the database.
         public IActionResult Index()
         {
             IEnumerable<Worker> objtList = _db.Workers;
             return View(objtList);
         }
-        //create the thing
+        //Here you can create a new worker entry into the list.
         public IActionResult Create()
         {   
             return View();
         }
-        
-        //post the thing
+        //And here it gets saved inside the database.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Worker obj)
@@ -40,7 +40,7 @@ namespace ChekingSys.Controllers
             }
             return View(obj);
         }
-        //just editing the thing
+        //Edit for the worker table.
         public IActionResult Edit(int? id)
         {
             if(id==null || id==0)
@@ -55,6 +55,7 @@ namespace ChekingSys.Controllers
 
             return View();
         }
+        //The edit gets saved.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Worker obj)
@@ -67,7 +68,7 @@ namespace ChekingSys.Controllers
             }
             return View(obj);
         }
-        //just delete the thing
+        //Worker entry deletion.
         public IActionResult Delete(int? id)
         {
             if (id == null || id == 0)
@@ -82,7 +83,7 @@ namespace ChekingSys.Controllers
 
             return View();
         }
-        //just confirm the delete
+        //Confirming the deletion and saving the changes.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirm(int? id)

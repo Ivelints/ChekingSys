@@ -9,6 +9,7 @@ using ChekingSys.Models;
 
 namespace ChekingSys.Controllers
 {
+    //Here are the brains of the login page. This is where the user login validation with the database happens.
     public class LoginController : Controller
     {
         private readonly AppDbContext _db;

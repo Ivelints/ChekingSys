@@ -9,6 +9,7 @@ namespace ChekingSys.Models
 {
     public class Worker
     {
+        //This is the Workers database connection.
         [Key]
         public int ID { get; set; }
         [DisplayName("Name Surname")]
